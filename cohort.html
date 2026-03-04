@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Squads | My Cohort</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .sidebar-link:hover { background-color: rgba(99, 102, 241, 0.1); color: #6366f1; }
+        .active-link { background-color: #6366f1; color: white !important; }
+        .timeline-item::before { content: ''; position: absolute; left: 19px; top: 0; bottom: 0; width: 2px; background: #e2e8f0; }
+    </style>
+</head>
+<body class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white border-r flex flex-col fixed h-full">
+        <div class="p-6"><h1 class="text-2xl font-bold text-indigo-600 flex items-center"><i class="fas fa-brain mr-2"></i> AI SQUADS</h1></div>
+        <nav class="flex-1 px-4 space-y-2 mt-4">
+            <a href="index.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-th-large mr-3"></i> Dashboard</a>
+            <a href="cohort.html" class="sidebar-link active-link flex items-center p-3 rounded-xl transition-all font-medium"><i class="fas fa-calendar-alt mr-3"></i> My Cohort</a>
+            <a href="bounties.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-tasks mr-3"></i> Bounties</a>
+            <a href="badges.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-award mr-3"></i> Badges</a>
+            <a href="squads.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-users mr-3"></i> Squad Directory</a>
+            <a href="leaderboard.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-chart-line mr-3"></i> Leaderboard</a>
+        </nav>
+    </aside>
+
+    <main class="flex-1 ml-64 p-8">
+        <header class="mb-8 flex justify-between items-center">
+            <div><h2 class="text-2xl font-bold text-gray-800">My Cohort Timeline</h2><p class="text-gray-500">Your journey from beginner to AI Master.</p></div>
+            <button class="bg-indigo-600 text-white px-4 py-2 rounded-xl font-bold text-sm shadow-lg shadow-indigo-100 hover:bg-indigo-700 transition-all">Download Syllabus</button>
+        </header>
+
+        <div class="max-w-4xl space-y-4">
+            <!-- Week 1 -->
+            <div class="relative pl-12 timeline-item pb-12">
+                <div class="absolute left-0 top-0 w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white border-4 border-white shadow-sm z-10"><i class="fas fa-check"></i></div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-800">Week 1: Fundamentals of AI & Prompting</h3>
+                            <p class="text-sm text-gray-500">Completed on March 2nd</p>
+                        </div>
+                        <span class="bg-green-100 text-green-600 text-[10px] font-bold px-2 py-1 rounded-full uppercase">Completed</span>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div class="flex items-center p-3 border rounded-xl bg-gray-50"><i class="fas fa-video text-indigo-600 mr-3"></i><div class="text-sm font-medium">Recorded Session</div></div>
+                        <div class="flex items-center p-3 border rounded-xl bg-gray-50"><i class="fas fa-file-alt text-indigo-600 mr-3"></i><div class="text-sm font-medium">Resources & Docs</div></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Week 2 -->
+            <div class="relative pl-12 timeline-item pb-12">
+                <div class="absolute left-0 top-0 w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white border-4 border-white shadow-sm z-10 animate-pulse"><i class="fas fa-play"></i></div>
+                <div class="bg-white p-6 rounded-2xl border-2 border-indigo-100 shadow-md">
+                    <div class="flex justify-between items-start mb-6">
+                        <div>
+                            <h3 class="text-lg font-bold text-indigo-600">Week 2: Autonomous Agents & AutoGPT</h3>
+                            <p class="text-sm text-gray-500">Currently Active • 2 assignments pending</p>
+                        </div>
+                        <span class="bg-indigo-100 text-indigo-600 text-[10px] font-bold px-2 py-1 rounded-full uppercase">In Progress</span>
+                    </div>
+                    <div class="space-y-3">
+                        <div class="p-4 bg-indigo-50 border border-indigo-100 rounded-xl flex items-center justify-between">
+                            <div class="flex items-center"><i class="fas fa-calendar text-indigo-600 mr-4"></i><div><p class="text-sm font-bold text-indigo-900">Live Workshop</p><p class="text-xs text-indigo-600">Tomorrow @ 6:00 PM (GMT+2)</p></div></div>
+                            <button class="bg-indigo-600 text-white px-3 py-1 rounded-lg text-xs font-bold">Add to Calendar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
