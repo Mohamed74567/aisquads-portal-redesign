@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Squads | Bounties</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .sidebar-link:hover { background-color: rgba(99, 102, 241, 0.1); color: #6366f1; }
+        .active-link { background-color: #6366f1; color: white !important; }
+        .bounty-card:hover { border-color: #6366f1; transform: translateY(-2px); transition: all 0.2s ease; }
+    </style>
+</head>
+<body class="flex min-h-screen">
+    <aside class="w-64 bg-white border-r flex flex-col fixed h-full">
+        <div class="p-6"><h1 class="text-2xl font-bold text-indigo-600 flex items-center"><i class="fas fa-brain mr-2"></i> AI SQUADS</h1></div>
+        <nav class="flex-1 px-4 space-y-2 mt-4">
+            <a href="index.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-th-large mr-3"></i> Dashboard</a>
+            <a href="cohort.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-calendar-alt mr-3"></i> My Cohort</a>
+            <a href="bounties.html" class="sidebar-link active-link flex items-center p-3 rounded-xl transition-all font-medium"><i class="fas fa-tasks mr-3"></i> Bounties</a>
+            <a href="badges.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-award mr-3"></i> Badges</a>
+            <a href="squads.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-users mr-3"></i> Squad Directory</a>
+            <a href="leaderboard.html" class="sidebar-link flex items-center p-3 rounded-xl transition-all text-gray-500 font-medium"><i class="fas fa-chart-line mr-3"></i> Leaderboard</a>
+        </nav>
+        <div class="p-6 mt-auto border-t">
+            <div class="flex items-center mb-4"><div class="w-10 h-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 font-bold mr-3">M</div><div><p class="text-sm font-bold text-gray-800">Mohamed</p><p class="text-xs text-gray-400">Level 4</p></div></div>
+        </div>
+    </aside>
+
+    <main class="flex-1 ml-64 p-8">
+        <header class="mb-8 flex justify-between items-center">
+            <div><h2 class="text-2xl font-bold text-gray-800">Available Bounties</h2><p class="text-gray-500">Complete tasks to earn XP and unlock exclusive rewards.</p></div>
+            <div class="flex space-x-3">
+                <select class="bg-white border rounded-xl px-4 py-2 text-sm text-gray-600 outline-none"><option>All Categories</option><option>Coding</option><option>Design</option><option>Community</option></select>
+            </div>
+        </header>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Bounty 1 -->
+            <div class="bounty-card bg-white p-6 rounded-2xl border shadow-sm flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-indigo-50 rounded-xl flex items-center justify-center text-indigo-600 text-xl"><i class="fas fa-palette"></i></div>
+                    <span class="text-xs font-bold text-indigo-600 bg-indigo-50 px-3 py-1 rounded-full">+500 XP</span>
+                </div>
+                <h3 class="font-bold text-gray-800 mb-2">Portal Redesign Challenge</h3>
+                <p class="text-sm text-gray-500 mb-6 flex-1">Propose a fresh UI/UX for the AI Squads student portal. Focus on dashboard and cohort pages.</p>
+                <div class="flex items-center justify-between mt-auto pt-4 border-t">
+                    <div class="flex items-center text-xs text-gray-400 font-medium"><i class="far fa-clock mr-1"></i> 3 days left</div>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-xs font-bold hover:bg-indigo-700 transition-all">Claim Bounty</button>
+                </div>
+            </div>
+
+            <!-- Bounty 2 -->
+            <div class="bounty-card bg-white p-6 rounded-2xl border shadow-sm flex flex-col h-full">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-green-600 text-xl"><i class="fas fa-code"></i></div>
+                    <span class="text-xs font-bold text-green-600 bg-green-50 px-3 py-1 rounded-full">+200 XP</span>
+                </div>
+                <h3 class="font-bold text-gray-800 mb-2">Automated Web Scraper</h3>
+                <p class="text-sm text-gray-500 mb-6 flex-1">Build an autonomous agent that scrapes news from 3 specified sources daily.</p>
+                <div class="flex items-center justify-between mt-auto pt-4 border-t">
+                    <div class="flex items-center text-xs text-gray-400 font-medium"><i class="far fa-clock mr-1"></i> 24 hours left</div>
+                    <button class="bg-indigo-600 text-white px-4 py-2 rounded-xl text-xs font-bold hover:bg-indigo-700 transition-all">Claim Bounty</button>
+                </div>
+            </div>
+
+            <!-- Bounty 3 -->
+            <div class="bounty-card bg-white p-6 rounded-2xl border shadow-sm flex flex-col h-full opacity-60">
+                <div class="flex justify-between items-start mb-4">
+                    <div class="w-12 h-12 bg-gray-100 rounded-xl flex items-center justify-center text-gray-400 text-xl"><i class="fas fa-microphone"></i></div>
+                    <span class="text-xs font-bold text-gray-400 bg-gray-100 px-3 py-1 rounded-full">+150 XP</span>
+                </div>
+                <h3 class="font-bold text-gray-800 mb-2">Workshop Speaker</h3>
+                <p class="text-sm text-gray-500 mb-6 flex-1">Share your knowledge about RAG architecture in a 15-min community lightning talk.</p>
+                <div class="flex items-center justify-between mt-auto pt-4 border-t">
+                    <span class="text-xs font-bold text-gray-400 bg-gray-100 px-2 py-1 rounded">CLAIMED BY 2/2</span>
+                    <button class="bg-gray-100 text-gray-400 px-4 py-2 rounded-xl text-xs font-bold cursor-not-allowed">Claimed</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
