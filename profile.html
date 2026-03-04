@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - AI Squads Redesign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-50 flex">
+    <!-- Sidebar -->
+    <aside class="w-64 bg-white h-screen border-r flex flex-col fixed left-0 top-0">
+        <div class="p-6">
+            <h1 class="text-xl font-bold text-indigo-600 flex items-center">
+                <i class="fas fa-robot mr-2"></i> AI Squads
+            </h1>
+        </div>
+        <nav class="flex-1 px-4 space-y-2">
+            <a href="index.html" class="flex items-center p-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-xl transition-all">
+                <i class="fas fa-th-large w-6"></i> Dashboard
+            </a>
+            <a href="bounties.html" class="flex items-center p-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-xl transition-all">
+                <i class="fas fa-bullseye w-6"></i> Bounties
+            </a>
+            <a href="cohort.html" class="flex items-center p-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-xl transition-all">
+                <i class="fas fa-users w-6"></i> My Cohort
+            </a>
+            <a href="badges.html" class="flex items-center p-3 text-gray-600 hover:bg-indigo-50 hover:text-indigo-600 rounded-xl transition-all">
+                <i class="fas fa-medal w-6"></i> Achievements
+            </a>
+            <a href="profile.html" class="flex items-center p-3 bg-indigo-600 text-white rounded-xl shadow-md transition-all">
+                <i class="fas fa-user-circle w-6"></i> Profile
+            </a>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 ml-64 p-8">
+        <header class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-800">My Profile</h2>
+        </header>
+
+        <div class="max-w-4xl mx-auto space-y-8">
+            <!-- Profile Card -->
+            <div class="bg-white p-8 rounded-2xl border shadow-sm flex items-center space-x-8">
+                <div class="w-32 h-32 bg-indigo-100 rounded-full flex items-center justify-center text-indigo-600 text-4xl font-bold">
+                    MS
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-gray-800">Mohamed Shaban Eid</h3>
+                    <p class="text-gray-500">Biomedical Engineering Student | AI Enthusiast</p>
+                    <div class="mt-4 flex space-x-4">
+                        <span class="px-3 py-1 bg-green-50 text-green-600 rounded-full text-sm font-medium">Active Member</span>
+                        <span class="px-3 py-1 bg-blue-50 text-blue-600 rounded-full text-sm font-medium">Squad Alpha</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stats Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-2xl border shadow-sm text-center">
+                    <p class="text-gray-400 text-sm mb-1 uppercase tracking-wider">Total XP</p>
+                    <p class="text-3xl font-bold text-gray-800">12,450</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm text-center">
+                    <p class="text-gray-400 text-sm mb-1 uppercase tracking-wider">Global Rank</p>
+                    <p class="text-3xl font-bold text-indigo-600">#42</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl border shadow-sm text-center">
+                    <p class="text-gray-400 text-sm mb-1 uppercase tracking-wider">Bounties Won</p>
+                    <p class="text-3xl font-bold text-gray-800">15</p>
+                </div>
+            </div>
+
+            <!-- Tabs/Sections -->
+            <div class="bg-white rounded-2xl border shadow-sm overflow-hidden">
+                <div class="border-b px-8 py-4 flex space-x-8">
+                    <button class="text-indigo-600 font-bold border-b-2 border-indigo-600 pb-2">Skills</button>
+                    <button class="text-gray-400 hover:text-gray-600 pb-2">Experience</button>
+                    <button class="text-gray-400 hover:text-gray-600 pb-2">Social</button>
+                </div>
+                <div class="p-8">
+                    <div class="flex flex-wrap gap-3">
+                        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-xl">Biomedical Engineering</span>
+                        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-xl">Machine Learning</span>
+                        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-xl">Arduino</span>
+                        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-xl">MATLAB</span>
+                        <span class="px-4 py-2 bg-gray-100 text-gray-700 rounded-xl">Technical Writing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
